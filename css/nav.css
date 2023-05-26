@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+#float-ball {
+  position: fixed;
+  top: 20px; /* 悬浮球初始位置 */
+  left: 20px; /* 悬浮球初始位置 */
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  cursor: move;
+}
+
+/* 导航栏样式 */
+#nav-bar {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+#nav-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-bar ul li {
+  position: relative;
+  padding: 5px 0;
+	
+}
+
+#nav-bar ul li:hover ul {
+  display: block;
+}
+
+#nav-bar ul ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding: 0;
+  background-color: #fff;
+	border-color: #29C9EB;
+	border-style: solid;
+	border-width: 2px;
+}
+
+#nav-bar ul ul li {
+  padding: 5px 10px;
+	width: 120px;
+	text-align: center;
+	border-color: #29C9EB;
+	border-style: solid;
+	border-width: 2px;
+}
